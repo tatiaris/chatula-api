@@ -87,6 +87,4 @@ app.post("/newmessage", (req, res) => {
   res.send(`message added`);
 });
 
-app.listen(port, () => {
-  console.log(`ChatulaAPI listening at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || port);
